@@ -14,12 +14,12 @@ func (c geocodeClient) Search(p SearchBaseRequestParams) (*GeoObjectCollection, 
 	req := internalRequest{
 		method:              http.MethodGet	,
 		functionName:        "GetById",
-		endpoint:            "",
+		endpoint:            "/",
 		withRequest:         nil,
 		withResponse:        resp,
 		withQueryParams:     p.toQueryParam(),
 		acceptedStatusCodes: []int{http.StatusOK},
-		apiName:             "",
+		apiName:             "GeoCode",
 	}
 	err := c.cli.executeRequest(req)
 	return &resp.Response.GeoObjectCollection, err

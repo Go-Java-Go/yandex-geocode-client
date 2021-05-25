@@ -30,7 +30,7 @@ type Lang string
 const (
 	trTR Lang = "tr_TR" /* trTR Turkish (only for maps of Turkey).*/
 	enRU Lang = "en_RU" /* enRU response in English, Russian map features;*/
-	enUS Lang = "en_RU" /* enUS response in English, Russian map features;*/
+	enUS Lang = "en_US" /* enUS response in English, Russian map features;*/
 	ruRU Lang = "ru_RU" /* ruRU Russian (default);*/
 	ukUA Lang = "uk_UA" /* ukUA Ukrainian;*/
 	beBY Lang = "be_BY" /* beBY Belarusian.*/
